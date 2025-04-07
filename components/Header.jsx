@@ -1,18 +1,16 @@
 import Image from "next/image";
+import { Menu } from "lucide-react";
+
+import HeaderRight from "./HeaderRight";
+import HeaderCenter from "./HeaderCenter";
+import HeaderLeft from "./HeaderLeft";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center p-4 bg-[#0f0f0f] text-white">
-      <div className="text-2xl font-bold">
-        <Image
-          src="/images/yt-logo.png"
-          alt="Company Logo"
-          width={200}
-          height={100}
-        />
-      </div>
-      <div className="flex items-center space-x-4"></div>
-      <div className="flex items-center space-x-4"></div>
+    <div className="flex justify-between items-center py-2 px-5 bg-[#0f0f0f] text-white">
+      <HeaderLeft />
+      <HeaderCenter />
+      <HeaderRight />
     </div>
   );
 };
